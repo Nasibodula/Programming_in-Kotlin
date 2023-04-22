@@ -1,0 +1,26 @@
+When coding, another good practice to follow is to add comments that describe what the code is intended to do. Comments can help people who read your code follow it more easily. Two forward slash symbols, or //, indicate that the text after it on the rest of the line is considered a comment, so it isn't interpreted as code. It's common practice to add a space after the two forward slash symbols.
+ 
+ // This is a comment.
+     or 
+
+/*
+ * This is a very long comment that can
+ * take up multiple lines.
+ */
+
+
+ example
+
+/**
+ * This program displays the number of messages
+ * in the user's inbox.
+ */
+fun main() {
+    // Create a variable for the number of unread messages.
+    var count = 10
+    println("You have $count unread messages.")
+
+    // Decrease the number of messages by 1.
+    count--
+    println("You have $count unread messages.")
+}

@@ -1,0 +1,84 @@
+    Define and call a function
+Declaring (or defining) a function uses the fun keyword and includes code within the curly braces which contains the instructions needed to execute a task.
+Calling a function causes all the code contained in that function to execute.
+
+The main() function doesn't actually get called anywhere in your code; the Kotlin compiler uses it as a starting point. The main() function is intended only to include other code you want to execute, such as calls to the println() function.
+The println() function is part of the Kotlin language. However, you can define your own functions. This allows your code to be reused if you need to call it more than once. Take the following program as an example.
+
+fun main() {
+    println("Happy Birthday, Rover!")
+    println("You are now 5 years old!")
+}
+
+The main() function consists of two println() statements—one to wish Rover a happy birthday, and another stating Rover's age.
+ 
+ Benefits of creating seperate functions for specific tasks
+- Reusable code: Rather than copying and pasting code that you need to use more than once, you can simply call a function wherever needed.
+- Readability: Ensuring functions do one and only one specific task helps other developers and teammates, as well as your future self to know exactly what a piece of code does.
+
+The syntax for defining a function is shown in the following diagram.
+
+
+fun name () {
+               
+	       body
+	
+}
+
+A function definition starts with the fun keyword, followed by the name of the function, a set of opening and closing parentheses, and a set of opening and closing curly braces. Contained in curly braces is the code that will run when the function is called.
+
+example in a code
+
+fun main() {
+    birthdayGreeting()
+}
+
+fun birthdayGreeting() {
+    println("Happy Birthday, Rover!")
+    println("You are now 5 years old!")
+}
+
+outpu:   
+Happy Birthday, Rover!
+You are now 5 years old!
+
+  Return a value from a function
+  
+fun name () : return type {
+        
+	body
+    return statement
+
+}
+
+When defining a function, you can specify the data type of the value you want it to return. The return type is specified by placing a colon (:) after the parentheses and the name of a type (Int, String, etc) after the colon. A single space is placed after the return type and before the opening curly brace. Within the function body, after all the statements, you use a return statement to specify the value you want the function to return. A return statement consists of the return keyword followed by the value, such as a variable, you want the function to return as an output.
+
+  Add a parameter to  function
+As you've seen, when you call println(), you can include a string within the parentheses or pass a value to the function. You can do the same with your birthdayGreeting() function. However, you first need to add a parameter to birthdayGreeting().
+A parameter specifies the name of a variable and a data type that you can pass into a function as data to be accessed inside the function. Parameters are declared within the parentheses after the function name.
+
+fun name (parameters) : return type {
+    
+        body
+
+}
+
+example 
+
+fun birthdayGreeting(name: String): String {
+    val nameGreeting = "Happy Birthday, Rover!"
+    val ageGreeting = "You are now 5 years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
+
+
+   Functions with multiple parameters
+Previously, you added a parameter to change the greeting based on the name. However, you can also define more than one parameter for a function, even parameters of different data types. In this section, you'll modify the greeting so that it also changes based on the dog's age.
+
+Parameter definitions are separated by commas. Similarly, when you call a function with multiple parameters, you separate the arguments passed in with commas as well. Let's see this in action.
+
+fun birthdayGreeting(name: String, age: Int): String {
+    val nameGreeting = "Happy Birthday, $name!"
+    val ageGreeting = "You are now 5 years old!"
+    return "$nameGreeting\n$ageGreeting"
+}

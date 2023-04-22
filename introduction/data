@@ -1,0 +1,46 @@
+After the variable name, you add a colon, a space, and then the data type of the variable. As mentioned earlier, String, Int, Double, Float, and Boolean are some of the basic Kotlin data types. You'll learn more data types later in this course. Remember to spell data types exactly as shown and begin each with a capital letter.
+ 
+ val name : data type = initial value
+For the count variable example, Int is the data type of the variable.
+val count: Int = 2
+
+    Assignment operator
+In the variable declaration, the equal sign symbol (=) follows the data type. The equal sign symbol is called the assignment operator. The assignment operator assigns a value to the variable. In other words, the value on the right-hand side of the equal sign gets stored in the variable on the left-hand side of the equal sign.
+
+    Variable initial value
+The variable value is the actual data that's stored in the variable.
+
+Kotlin data type
+
+What kind of data it can contain
+
+Example literal values
+
+String
+Text"
+Add contact"
+"Search"
+"Sign in"
+
+Int
+Integer number
+32
+1293490
+-59281
+
+Double
+Decimal number
+2.0
+501.0292
+-31723.99999
+
+Float
+Decimal number (that is less precise than a Double). Has an f or F at the end of the number.
+5.0f
+-1630.209f
+1.2940278F
+
+Boolean
+true or false. Use this data type when there are only two possible values. Note that true and false are keywords in Kotlin.
+true
+false

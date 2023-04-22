@@ -1,0 +1,17 @@
+When you define a variable, you assign a name to uniquely identify it. You also decide what type of data it can hold by specifying the data type. Lastly, you can provide an initial value that will be stored in the variable, but this is optional.
+https://developer.android.com/static/codelabs/basic-android-kotlin-compose-variables/img/e399b1ba43c613c9_720.png
+
+example a variable used
+
+fun main() {
+    val count: Int = 2
+    println(count)
+}
+
+n the program you ran, the second line of code says:
+val count: Int = 2
+
+This statement creates an integer variable called count that holds the number 2.
+syntax;
+Val name : data type = initial value
+
